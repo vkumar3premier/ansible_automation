@@ -1,4 +1,5 @@
 ---
+
 # This playbook executes a backup script module on Windows hosts
 
 - name: Run powershell script to backup vm
@@ -6,4 +7,4 @@
   gather_facts: false
   tasks:
     - name: Run powershell script
-      script: files/helloworld.ps1
+      script: D:\Veeam\Scripts\CloudForms-bkup.ps1
