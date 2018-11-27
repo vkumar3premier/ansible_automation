@@ -4,6 +4,7 @@
 
 - name: Run powershell script to backup vm
   hosts: all 
+  connection: winrm
   tasks:
     - name: Run powershell script
       script: D:\Veeam\Scripts\CloudForms-bkup.ps1
